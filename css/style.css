@@ -226,3 +226,38 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(20,83,45,.25);
 }
 
+/* ========================= */
+/* Minimal, required tweaks  */
+/* ========================= */
+
+/* Make email and footer contact links white */
+.address a,
+footer a {
+  color: #ffffff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Improve card text readability (Mathew’s spacing note) */
+.card p {
+  line-height: 1.65;
+  margin: 0.25rem 0 0.75rem;
+}
+
+/* Higher-contrast buttons + keyboard focus */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  background: #0b5d34;   /* darker green for contrast */
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn:hover { filter: brightness(1.1); }
+.btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(11,93,52,0.35);
+}
+
